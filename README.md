@@ -1,4 +1,3 @@
-TODO LIST APP
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # To Do list
