@@ -39,23 +39,28 @@ body {
   .title {
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 1em 1em;
     margin: 0;
-    box-sizing: border-box;
-    width: 100%;
   }
   
   .title > p {
     margin: 0;
   }
-  
-  .item-element {
-    display: flex;
-    justify-content: space-between;
+
+  .icon-menu-container {
+    padding: 0;
+    width: min-content;
+    cursor: cell;
   }
   
+  .checkbox-container {
+    display: flex;
+  }
+
   .icon-menu-container {
     padding: 0;
     width: min-content;
@@ -66,12 +71,17 @@ body {
     display: flex;
   }
   
+  .item-element {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .root {
     display: flex;
+    background-color: white;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: white;
     box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.76);
     -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.76);
     -moz-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.76);
