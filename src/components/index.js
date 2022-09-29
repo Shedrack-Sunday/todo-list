@@ -6,28 +6,7 @@ const Tasks = class {
     this.description = description;
     this.completed = completed;
     this.index = index;
-    this.tasks = [
-      {
-        description: "Solve 2 leetcode questions",
-        completed: false,
-        index: 0,
-      },
-      {
-        description: "Deplo project using webpack",
-        completed: false,
-        index: 1,
-      },
-      {
-        description: "Study Dynamic programming for 2 hrs",
-        completed: false,
-        index: 2,
-      },
-      {
-        description: "Learn GrapQL for 3 hrs",
-        completed: false,
-        index: 3,
-      },
-    ];
+    this.tasks = [];
   }
 
   // Populate the memeory with the task inut baswd on the index
