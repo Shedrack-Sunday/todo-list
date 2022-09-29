@@ -4,6 +4,9 @@
 
 > Using HTML, CSS, JavaScriptsm, Npm and Webpack
 
+## Live View
+Live Link: [Here](https://shedrack-sunday.github.io/todo-list/dist/)
+
 
 ## Available Scripts
 
