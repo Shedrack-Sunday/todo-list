@@ -9,7 +9,7 @@ if (localStorage.savedTasks) {
   objTasks.tasks = JSON.parse(localStorage.getItem("savedTasks"));
 }
 
-const btnClearTasks = document.createElement("button");
+const btnClearTasks = document.createElement("button"); // Clear button element created to clear the tasks
 const root = document.querySelector(".root");
 const ulElement = document.querySelector(".ul-element");
 const inputElement = document.querySelector(".input-element");
