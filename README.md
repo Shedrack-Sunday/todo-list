@@ -2,10 +2,20 @@
 
 # To Do list
 
+
+> Using HTML, 
+> CSS, 
+> JavaScripts, 
+> Npm
+> Jest 
+> Webpack
+
 > Using HTML, CSS, JavaScript, Npm and Webpack
 
 ## Live View
 Live Link: [Here](https://shedrack-sunday.github.io/todo-list/dist/)
+
+
 
 
 ## Available Scripts
@@ -24,7 +34,7 @@ You will also see any lint errors in the console.
 
 ## Built With
 
-- HTML, CSS, JavaScript, Npm and Webpack, IDM environment.
+- HTML, CSS, JavaScript, Npm and Webpack, IDM environment and jest testing framework
 
 ## Getting Started
 
@@ -38,11 +48,11 @@ To get a local copy up follow these simple example steps.
 
 Open a terminal or a git bash in the desired directory and run `https://github.com/hendridg/todo-list`
 
-👤 **Author**
+👤 **Authors**
 
 - GitHub: [@ShedrackSunday](https://github.com/Shedrack-Sunday)
-- Twitter: [@DeleSundayS](https://twitter.com/DeleSundayS)
 - LinkedIn: [ShedrackSunday](https://linkedin.com/in/ShedrackSunday)
+- GitHub: [@Jonahkayizzi](https://github.com/jonahkayizzi)
 
 ## 📝 License
 

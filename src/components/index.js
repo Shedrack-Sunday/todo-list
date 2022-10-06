@@ -1,12 +1,27 @@
-const containerElement = document.querySelector(".container-todo");
-const ulElement = document.querySelector(".ul-element");
+
 
 const Tasks = class {
-  constructor(description, completed = false, index = 3) {
+  constructor(description, completed = false, index) {
     this.description = description;
     this.completed = completed;
     this.index = index;
-    this.tasks = [];
+    this.tasks = [
+      {
+        description: "Go out for dinner",
+        completed: false,
+        index: 0,
+      },
+      {
+        description: "complete To Do test project",
+        completed: false,
+        index: 1,
+      },
+      {
+        description: "Go to the gym",
+        completed: false,
+        index: 2,
+      },
+    ];
   }
 
   // Populate the memeory with the task inut baswd on the index
@@ -21,13 +36,18 @@ const Tasks = class {
 
   // Method to remove a selected task
   removeTask(task) {
-    const result = this.tasks.filter((b) => b !== task);
+    const result = this.tasks.filter((b) => b !== task.index);
     this.tasks = result;
     this.populateFields();
+    this.displayTasks();
   }
 
-  // Method to add a new task
+  // Method to add a new task.
+  // Return saved items  if its empty.
   addTask = (newTask) => {
+    if (newTask.description === '') {
+      return;
+    }
     this.tasks.push(newTask);
     this.populateFields();
     this.displayTasks();
@@ -37,7 +57,9 @@ const Tasks = class {
   // New Div's and classes are created here to render
   // the new task addition dynamically.
   displayTasks = () => {
-    ulElement.innerHTML = "";
+    const containerElement = document.querySelector(".container-todo");
+    const ulElement = document.querySelector(".ul-element");
+    ulElement.innerHTML = '';
     this.tasks.map((task) => {
       const li = document.createElement("li");
       const itemTaskElement = document.createElement("div");
@@ -50,6 +72,7 @@ const Tasks = class {
       const icon = document.createElement("div");
       icon.innerHTML = '<i class="fas fa-ellipsis-v"></i>';
       icon.classList.add("icon-menu-container");
+      li.classList.add(`li${task.index}`);
       const checkBox = document.createElement("input");
       const iconMenu = '<i class="fas fa-ellipsis-v"></i>';
       const iconDelete = '<i class="fas fa-trash-alt"></i>';
@@ -59,7 +82,7 @@ const Tasks = class {
       label.innerHTML = task.description;
       checkBox.checked = task.completed;
 
-      // Line threough the given task if its check-boxed
+      // Line through the given task if its check-boxed
       if (checkBox.checked) {
         label.style.textDecoration = "line-through";
       }
