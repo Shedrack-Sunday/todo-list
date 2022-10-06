@@ -2,12 +2,20 @@
 
 # To Do list
 
+
 > Using HTML, 
 > CSS, 
 > JavaScripts, 
 > Npm
 > Jest 
 > Webpack
+
+> Using HTML, CSS, JavaScript, Npm and Webpack
+
+## Live View
+Live Link: [Here](https://shedrack-sunday.github.io/todo-list/dist/)
+
+
 
 
 ## Available Scripts
