@@ -41,6 +41,16 @@ describe('Add and remove task', () => {
     const liElement = document.querySelectorAll('li');
     expect(liElement[5].textContent).toEqual('Task from test 4');
   });
+
+  test('Completed status of added item should be false', () => {
+    objTasks.addTask({
+      description: 'Task from test 5',
+      index: 0,
+    });
+    expect(objTasks.tasks[6].completed).toBeFalsy();
+  });
+
+
   test('using removeTask removes exactly 1 task from the DOM', () => {
     const ulElement = document.querySelector('.ul-element');
     objTasks.removeTask({
@@ -48,7 +58,7 @@ describe('Add and remove task', () => {
       completed: false,
       index: 0,
     });
-    expect(ulElement.childElementCount).toEqual(6);
+    expect(ulElement.childElementCount).toEqual(7);
   });
   test('Should  delete an item', () => {
     const ulElement = document.querySelector('.ul-element');
@@ -57,7 +67,7 @@ describe('Add and remove task', () => {
       completed: false,
       index: 0,
     });
-    expect(ulElement.childElementCount).toEqual(6);
+    expect(ulElement.childElementCount).toEqual(7);
   });
   test('Empty description does not add anything to DOM', () => {
     const ulElement = document.querySelector('.ul-element');
@@ -66,7 +76,7 @@ describe('Add and remove task', () => {
       completed: false,
       index: 0,
     });
-    expect(ulElement.childElementCount).toEqual(6);
+    expect(ulElement.childElementCount).toEqual(7);
   });
 });
 
